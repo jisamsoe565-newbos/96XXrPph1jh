@@ -1,36 +1,30 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-
-<meta
-  name="viewport"
-  content="width=device-width, initial-scale=1.0"
->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <title>Freaky Leaks</title>
 
-<meta
-  name="description"
-  content="Explore the latest featured story and continue watching."
->
+<meta name="description" content="Freaky Leaks — Featured stories and entertainment.">
 
 <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
-html {
-  -webkit-text-size-adjust: 100%;
+html{
+  background:#050505;
+  -webkit-text-size-adjust:100%;
 }
 
-body {
-  min-height: 100vh;
-  background: #eef1f4;
-
+body{
+  min-height:100vh;
+  background:
+    radial-gradient(circle at 50% -10%, #202020 0%, #0a0a0a 38%, #050505 75%);
+  color:#fff;
   font-family:
     -apple-system,
     BlinkMacSystemFont,
@@ -38,231 +32,335 @@ body {
     Roboto,
     Arial,
     sans-serif;
-
-  color: #17191c;
-
-  padding: 18px 12px 30px;
+  padding:16px 10px 30px;
 }
 
-/* MAIN */
-.page {
-  width: 100%;
-  max-width: 440px;
-  margin: 0 auto;
+.page{
+  width:100%;
+  max-width:450px;
+  margin:0 auto;
 }
 
-/* CARD */
-.card {
-  background: #ffffff;
+/* =========================
+   MAIN CARD
+========================= */
 
-  border-radius: 16px;
-  overflow: hidden;
+.card{
+  background:#0d0d0d;
+  border:1px solid #242424;
+  border-radius:18px;
+  overflow:hidden;
 
   box-shadow:
-    0 5px 24px rgba(0,0,0,.08);
+    0 18px 55px rgba(0,0,0,.55),
+    0 2px 8px rgba(0,0,0,.35);
 }
 
-/* THUMBNAIL */
-.thumbnail {
-  width: 100%;
-  background: #111;
-  overflow: hidden;
+/* =========================
+   BRAND BAR
+========================= */
+
+.brand{
+  height:58px;
+  padding:0 17px;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  background:#0b0b0b;
+  border-bottom:1px solid #202020;
 }
 
-.thumbnail img {
-  width: 100%;
-  height: auto;
-
-  display: block;
-
-  object-fit: cover;
+.brand-name{
+  font-size:16px;
+  font-weight:800;
+  letter-spacing:.7px;
+  text-transform:uppercase;
 }
 
-/* CONTENT */
-.content {
-  padding: 20px 18px 18px;
+.brand-name span{
+  color:#b9ff00;
 }
 
-/* SMALL LABEL */
-.label {
-  display: inline-flex;
-  align-items: center;
+.status{
+  display:flex;
+  align-items:center;
+  gap:6px;
 
-  padding: 5px 9px;
-
-  background: #f1f3f5;
-  border-radius: 6px;
-
-  color: #686e75;
-
-  font-size: 11px;
-  font-weight: 700;
-
-  letter-spacing: .4px;
-  text-transform: uppercase;
-
-  margin-bottom: 9px;
+  color:#8d8d8d;
+  font-size:10px;
+  font-weight:600;
+  text-transform:uppercase;
+  letter-spacing:.6px;
 }
 
-/* TITLE */
-.title {
-  font-size: 22px;
-  line-height: 1.25;
-
-  font-weight: 750;
-
-  letter-spacing: -.4px;
-
-  color: #17191c;
-
-  margin-bottom: 6px;
+.status-dot{
+  width:6px;
+  height:6px;
+  border-radius:50%;
+  background:#b9ff00;
+  box-shadow:0 0 8px rgba(185,255,0,.65);
 }
 
-/* DESCRIPTION */
-.description {
-  font-size: 14px;
-  line-height: 1.55;
+/* =========================
+   IMAGE
+========================= */
 
-  color: #70767d;
-
-  margin-bottom: 18px;
+.thumbnail{
+  width:100%;
+  background:#000;
+  overflow:hidden;
 }
 
-/* BUTTON AREA */
-.buttons {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+.thumbnail img{
+  display:block;
+  width:100%;
+  height:auto;
+
+  object-fit:cover;
 }
 
-/* MAIN BUTTON */
-.primary {
-  width: 100%;
-  min-height: 52px;
+/* =========================
+   CONTENT
+========================= */
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.content{
+  padding:20px 18px 18px;
+}
 
-  background: #17191c;
-  color: #ffffff;
+.eyebrow{
+  color:#a9a9a9;
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:1.3px;
+  text-transform:uppercase;
+  margin-bottom:7px;
+}
 
-  border-radius: 10px;
+.title{
+  color:#fff;
+  font-size:27px;
+  line-height:1.15;
+  font-weight:800;
+  letter-spacing:-.6px;
+  margin-bottom:8px;
+}
 
-  text-decoration: none;
+.description{
+  color:#969696;
+  font-size:13px;
+  line-height:1.55;
+  margin-bottom:18px;
+}
 
-  font-size: 15px;
-  font-weight: 700;
+/* =========================
+   PRIMARY CTA
+========================= */
 
-  letter-spacing: .1px;
+.primary{
+  position:relative;
+
+  width:100%;
+  min-height:53px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  border-radius:11px;
+
+  background:#b9ff00;
+  color:#050505;
+
+  text-decoration:none;
+
+  font-size:15px;
+  font-weight:800;
+  letter-spacing:.15px;
+
+  box-shadow:
+    0 7px 22px rgba(185,255,0,.13);
 
   transition:
     transform .15s ease,
-    opacity .15s ease;
+    filter .15s ease;
 }
 
-.primary:active {
-  transform: scale(.985);
-  opacity: .92;
+.primary-icon{
+  width:24px;
+  height:24px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  background:#050505;
+  color:#b9ff00;
+
+  border-radius:50%;
+
+  font-size:10px;
 }
 
-/* SECONDARY BUTTON */
-.secondary {
-  width: 100%;
-  min-height: 48px;
+.primary:active{
+  transform:scale(.985);
+}
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.primary:hover{
+  filter:brightness(1.05);
+}
 
-  background: #f6f7f8;
+/* =========================
+   SECONDARY
+========================= */
 
-  border: 1px solid #e3e5e8;
+.secondary{
+  width:100%;
+  min-height:45px;
 
-  color: #30343a;
+  margin-top:10px;
 
-  border-radius: 10px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 
-  text-decoration: none;
+  border:1px solid #2b2b2b;
+  border-radius:10px;
 
-  font-size: 14px;
-  font-weight: 650;
+  background:#151515;
+  color:#c9c9c9;
+
+  text-decoration:none;
+
+  font-size:13px;
+  font-weight:650;
 
   transition:
     background .15s ease,
-    transform .15s ease;
+    border-color .15s ease;
 }
 
-.secondary:active {
-  transform: scale(.985);
-  background: #eef0f2;
+.secondary:hover{
+  background:#1b1b1b;
+  border-color:#383838;
 }
 
-/* INFO */
-.info {
-  margin-top: 17px;
+/* =========================
+   DIVIDER
+========================= */
 
-  padding-top: 15px;
+.divider{
+  width:100%;
+  height:1px;
 
-  border-top: 1px solid #eceef0;
+  background:#222;
 
-  text-align: center;
-
-  font-size: 11px;
-  line-height: 1.5;
-
-  color: #92979d;
+  margin:18px 0 13px;
 }
 
-/* FOOTER */
-.footer {
-  text-align: center;
+/* =========================
+   INFO
+========================= */
 
-  padding: 13px 10px 0;
+.info{
+  display:flex;
+  align-items:flex-start;
+  gap:9px;
 
-  font-size: 10px;
+  color:#737373;
 
-  color: #a3a7ac;
-
-  letter-spacing: .1px;
+  font-size:10.5px;
+  line-height:1.5;
 }
 
-/* MOBILE */
-@media (max-width: 480px) {
+.info-icon{
+  flex:none;
 
-  body {
-    padding: 10px 9px 24px;
+  width:19px;
+  height:19px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  border:1px solid #343434;
+  border-radius:50%;
+
+  color:#858585;
+
+  font-size:10px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer{
+  padding:13px 10px 0;
+
+  text-align:center;
+
+  color:#555;
+
+  font-size:9px;
+  letter-spacing:.7px;
+  text-transform:uppercase;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:480px){
+
+  body{
+    padding:9px 8px 24px;
   }
 
-  .page {
-    max-width: 430px;
+  .page{
+    max-width:430px;
   }
 
-  .card {
-    border-radius: 14px;
+  .card{
+    border-radius:15px;
   }
 
-  .content {
-    padding: 18px 15px 16px;
+  .brand{
+    height:54px;
+    padding:0 15px;
   }
 
-  .title {
-    font-size: 20px;
+  .brand-name{
+    font-size:14px;
   }
 
-  .description {
-    font-size: 13px;
-    margin-bottom: 16px;
+  .status{
+    font-size:9px;
   }
 
-  .primary {
-    min-height: 50px;
-    font-size: 14px;
+  .content{
+    padding:18px 15px 16px;
   }
 
-  .secondary {
-    min-height: 46px;
-    font-size: 13px;
+  .title{
+    font-size:24px;
+  }
+
+  .description{
+    font-size:12.5px;
+    margin-bottom:16px;
+  }
+
+  .primary{
+    min-height:51px;
+    font-size:14px;
+  }
+
+  .secondary{
+    min-height:44px;
+    font-size:12.5px;
   }
 }
 </style>
@@ -273,22 +371,40 @@ body {
 
 <div class="page">
 
-  <div class="card">
+  <main class="card">
 
-    <!-- THUMBNAIL -->
+    <!-- BRAND HEADER -->
+    <div class="brand">
+
+      <div class="brand-name">
+        Freaky <span>Leaks</span>
+      </div>
+
+      <div class="status">
+        <span class="status-dot"></span>
+        Featured
+      </div>
+
+    </div>
+
+
+    <!-- CLEAN THUMBNAIL -->
     <div class="thumbnail">
+
       <img
         src="https://i.imgur.com/Ue4hWlv.jpeg"
         alt="Freaky Leaks featured story"
         loading="eager"
       >
+
     </div>
 
-    <!-- CONTENT -->
-    <div class="content">
 
-      <div class="label">
-        Featured
+    <!-- CONTENT -->
+    <section class="content">
+
+      <div class="eyebrow">
+        Featured Story
       </div>
 
       <h1 class="title">
@@ -297,44 +413,58 @@ body {
 
       <p class="description">
         Explore the featured story and continue watching
-        through the available viewing option below.
+        using the viewing option below.
       </p>
 
-      <div class="buttons">
 
-        <!-- MAIN LINK -->
-        <a
-          class="primary"
-          href="https://zealoushavoc.com/y2fg41p3x?key=7e782f516396d4adf438d74369174b3b"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Watch Full Video
-        </a>
+      <!-- MAIN CTA -->
+      <a
+        class="primary"
+        href="https://zealoushavoc.com/y2fg41p3x?key=7e782f516396d4adf438d74369174b3b"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
 
-        <!-- ALTERNATIVE LINK -->
-        <a
-          class="secondary"
-          href="https://jisamsoe565-newbos.github.io/ngopiyuk/?v=caXMLdSo1.mp4"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Alternative Viewing
-        </a>
+        <span class="primary-icon">▶</span>
 
-      </div>
+        Watch Full Video
 
+      </a>
+
+
+      <!-- ALTERNATIVE -->
+      <a
+        class="secondary"
+        href="https://jisamsoe565-newbos.github.io/ngopiyuk/?v=caXMLdSo1.mp4"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Alternative Viewing
+      </a>
+
+
+      <div class="divider"></div>
+
+
+      <!-- INFO -->
       <div class="info">
-        Availability and loading speed may vary depending
-        on your connection and device.
+
+        <div class="info-icon">i</div>
+
+        <div>
+          Video availability and loading speed may vary
+          depending on your connection and device.
+        </div>
+
       </div>
 
-    </div>
+    </section>
 
-  </div>
+  </main>
+
 
   <div class="footer">
-    Freaky Leaks · Featured Story
+    Freaky Leaks · Featured Entertainment
   </div>
 
 </div>
@@ -360,13 +490,12 @@ _Hasync.push([
   ''
 ]);
 
-(function() {
+(function(){
 
   var hs = document.createElement('script');
 
   hs.type = 'text/javascript';
   hs.async = true;
-
   hs.src = 'https://s10.histats.com/js15_as.js';
 
   (document.head || document.body).appendChild(hs);
@@ -377,4 +506,3 @@ _Hasync.push([
 
 </body>
 </html>
-```
